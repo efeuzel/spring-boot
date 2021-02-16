@@ -1,11 +1,9 @@
-package com.example.restclient.json;
+package com.oreilly.restclient.json;
 
-import java.util.List;
-
-public class Value {
+public class JokeValue {
     private int id;
     private String joke;
-    private List<String> categories;
+    private String[] categories;
 
     public int getId() {
         return id;
@@ -23,11 +21,11 @@ public class Value {
         this.joke = joke;
     }
 
-    public List<String> getCategories() {
+    public String[] getCategories() {
         return categories;
     }
 
-    public void setCategories(List<String> categories) {
+    public void setCategories(String[] categories) {
         this.categories = categories;
     }
 }
